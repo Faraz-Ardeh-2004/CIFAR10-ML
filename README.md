@@ -17,6 +17,9 @@ CIFAR-10 is a dataset of 60,000 32x32 color images in 10 classes, with 6,000 ima
 9. Ship
 10. Truck
 
+![image](https://github.com/Faraz-Ardeh-2004/CIFAR10-ML/assets/59162288/4ee2437c-2868-4b5b-ad53-69d0b2d5a02c)
+
+
 ## Project Structure
 
 1. Data Preparation
@@ -54,10 +57,21 @@ CIFAR-10 is a dataset of 60,000 32x32 color images in 10 classes, with 6,000 ima
    - KNN: 26% accuracy
    - Random Forest: 37% accuracy
    - SVM: 35% accuracy
+   ![image](https://github.com/Faraz-Ardeh-2004/CIFAR10-ML/assets/59162288/2dec60d3-8218-4ef9-8c14-9cd77375a648)
+
 
 2. Neural Networks:
    - Feedforward NN: 25.6% accuracy
+   ![image](https://github.com/Faraz-Ardeh-2004/CIFAR10-ML/assets/59162288/d847c77a-33b2-40d6-a56b-49a1bbd3b7df)
+   ![image](https://github.com/Faraz-Ardeh-2004/CIFAR10-ML/assets/59162288/a61a3547-286d-45fc-914b-e5f28299ef60)
+   ![image](https://github.com/Faraz-Ardeh-2004/CIFAR10-ML/assets/59162288/c5f1cf11-75ae-40e2-bbc4-b16747a7494e)
+
    - CNN (best architecture): 93% accuracy
+   ![image](https://github.com/Faraz-Ardeh-2004/CIFAR10-ML/assets/59162288/09f1ecf6-5064-4450-93aa-175730cb47a1)
+   ![image](https://github.com/Faraz-Ardeh-2004/CIFAR10-ML/assets/59162288/d284747b-e27e-42b7-9ba9-392649faced6)
+   ![image](https://github.com/Faraz-Ardeh-2004/CIFAR10-ML/assets/59162288/b169cbd5-befe-47a2-9f4f-b8c16b8b7183)
+
+
    - Wide ResNet: 90%< accuracy (estimated)
 
 ## Visualizations
@@ -67,6 +81,9 @@ The project includes:
 - Confusion matrices for all models
 - ROC curves and AUC scores
 - Precision-Recall curves
+Make Prediction:
+In the below code we use 3rd CNN model to predict the label of unknown test data set
+![image](https://github.com/Faraz-Ardeh-2004/CIFAR10-ML/assets/59162288/596b98f3-7e71-4731-bd22-7983e7fc4cfe)
 
 ## How to Use
 
