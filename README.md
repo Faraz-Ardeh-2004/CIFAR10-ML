@@ -6,6 +6,9 @@ This project explores various machine learning and deep learning techniques to c
 
 CIFAR-10 is a dataset of 60,000 32x32 color images in 10 classes, with 6,000 images per class. The classes are:
 
+Kaggle Dataset link:
+[Kaggle](https://www.kaggle.com/c/cifar-10/)
+
 1. Airplane
 2. Automobile
 3. Bird
