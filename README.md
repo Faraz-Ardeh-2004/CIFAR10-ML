@@ -123,8 +123,8 @@ The project includes:
 
 ## Author
 
--Faraz Ardeh 
--fa.ardeh@gmail.com
--https://www.linkedin.com/in/faraz-ardeh-896917219/
+   - Faraz Ardeh 
+   - fa.ardeh@gmail.com
+   - https://www.linkedin.com/in/faraz-ardeh-896917219/
 
 This project was created as part of the 'Introductory Artificial Intelligence' course of the winter semester of SBU.
