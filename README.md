@@ -84,8 +84,9 @@ The project includes:
 - Confusion matrices for all models
 - ROC curves and AUC scores
 - Precision-Recall curves
-Make Prediction:
-In the below code we use 3rd CNN model to predict the label of unknown test data set
+
+###Make Prediction:
+-In the below code we use 3rd CNN model to predict the label of unknown test data set
 
 ![image](https://github.com/Faraz-Ardeh-2004/CIFAR10-ML/assets/59162288/596b98f3-7e71-4731-bd22-7983e7fc4cfe)
 
