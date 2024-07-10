@@ -116,7 +116,6 @@ The project includes:
 
 ## Future Work
 
-- 
 - Implement more advanced architectures (e.g., EfficientNet)
 - Explore transfer learning
 - Perform extensive hyperparameter tuning
@@ -124,7 +123,7 @@ The project includes:
 
 ## Author
 
-Faraz Ardeh 
+-Faraz Ardeh 
 -fa.ardeh@gmail.com
 -https://www.linkedin.com/in/faraz-ardeh-896917219/
 
