@@ -1,79 +1,106 @@
-# CIFAR-10 Image Classification Project
+# CIFAR-10 Image Classification
 
-## Overview
+This project explores various machine learning and deep learning techniques to classify images from the CIFAR-10 dataset.
 
-This project focuses on the classification of images from the CIFAR-10 dataset using various machine learning and deep learning techniques. The CIFAR-10 dataset consists of 60,000 32x32 color images across 10 different classes, with 6,000 images per class. Our goal is to explore and compare different approaches to accurately classify these images.
+## About CIFAR-10
 
-## Table of Contents
+CIFAR-10 is a dataset of 60,000 32x32 color images in 10 classes, with 6,000 images per class. The classes are:
 
-1. [Dataset](#dataset)
-2. [Approaches](#approaches)
-3. [Models](#models)
-4. [Results](#results)
-5. [Installation](#installation)
-6. [Usage](#usage)
-7. [Evaluation Metrics](#evaluation-metrics)
-8. [Visualizations](#visualizations)
-9. [Future Work](#future-work)
-10. [Contributing](#contributing)
-11. [License](#license)
+1. Airplane
+2. Automobile
+3. Bird
+4. Cat
+5. Deer
+6. Dog
+7. Frog
+8. Horse
+9. Ship
+10. Truck
 
-## Dataset
+## Project Structure
 
-The CIFAR-10 dataset includes the following classes:
-- Airplane
-- Automobile
-- Bird
-- Cat
-- Deer
-- Dog
-- Frog
-- Horse
-- Ship
-- Truck
+1. Data Preparation
+   - Loading the CIFAR-10 dataset
+   - Normalizing pixel values
+   - Data augmentation
+   - Dimensionality reduction using PCA
 
-We use 50,000 images for training and 10,000 for testing.
+2. Machine Learning Models
+   - K-Nearest Neighbors (KNN)
+   - Random Forest
+   - Support Vector Machine (SVM)
 
-## Approaches
+3. Neural Networks
+   - Feedforward Neural Network
+   - Convolutional Neural Networks (3 different architectures)
+   - Wide ResNet (Not finished due to computational limitations)
 
-Our project explores two main approaches:
-
-1. **Traditional Machine Learning Models**: We implement several classical machine learning algorithms, applying them to the flattened image data after dimensionality reduction using PCA.
-
-2. **Deep Learning Models**: We develop various neural network architectures, from simple feedforward networks to more complex convolutional neural networks (CNNs).
-
-## Models
+## Implementation Details
 
 ### Machine Learning Models
-1. K-Nearest Neighbors (KNN)
-2. Random Forest
-3. Support Vector Machine (SVM)
+- Applied PCA to reduce dimensionality
+- Used scikit-learn for implementation
+- Evaluated using accuracy, precision, recall, F1-score, and MSE
 
 ### Neural Networks
-1. Feedforward Neural Network
-2. Multiple CNN architectures with varying complexity
-3. Wide ResNet
+- Implemented using TensorFlow and Keras
+- Feedforward NN: 3 dense layers with dropout
+- CNNs: Various combinations of Conv2D, MaxPooling2D, and Dense layers
+- Wide ResNet: Based on ResNet50 architecture
 
 ## Results
 
-Here's a summary of our key findings:
+1. Machine Learning Models:
+   - KNN: 26% accuracy
+   - Random Forest: 37% accuracy
+   - SVM: 35% accuracy
 
-1. **Machine Learning Models**: 
-   - KNN achieved an accuracy of X%
-   - Random Forest reached Y% accuracy
-   - SVM performed with Z% accuracy
+2. Neural Networks:
+   - Feedforward NN: 25.6% accuracy
+   - CNN (best architecture): 93% accuracy
+   - Wide ResNet: 90%< accuracy (estimated)
 
-2. **Neural Networks**:
-   - Our basic feedforward network achieved A% accuracy
-   - The best performing CNN architecture reached B% accuracy
-   - The Wide ResNet model topped at C% accuracy
+## Visualizations
 
-(Note: Replace X, Y, Z, A, B, C with the actual percentages from your results)
+The project includes:
+- Accuracy and loss curves for neural networks
+- Confusion matrices for all models
+- ROC curves and AUC scores
+- Precision-Recall curves
 
-The CNN models significantly outperformed the traditional machine learning approaches, with the Wide ResNet showing the best overall performance.
+## How to Use
 
-## Installation
+1. Install required libraries:
+   tensorflow, keras, scikit-learn, numpy, pandas, matplotlib, seaborn
 
-To set up this project, follow these steps:
+2. Run the Jupyter notebooks or Python scripts in this order:
+   - data_preparation.py
+   - machine_learning_models.py
+   - neural_networks.py
+   - wide_resnet.py
 
-1. Clone the repository:
+3. View results in the generated plots and printed metrics
+4. you can change the hyperparameters too (optional)
+
+## Conclusions
+ 
+1. It is recommended to adjust the learning rate from 0.001 to 0.0001.
+2. Increasing the number of epochs can achieve better results
+3. The ratio of training data to testing and the amount of data that is checked by different algorithms and models can be effective, for example, increasing the number of input data in the training phase of the model can lead to better performance in the testing phase.
+4. Mean Squared Error (MSE) is not recommended for the loss function in image classification projects, so i use loss='categorical_crossentropy'
+
+## Future Work
+
+- 
+- Implement more advanced architectures (e.g., EfficientNet)
+- Explore transfer learning
+- Perform extensive hyperparameter tuning
+- Investigate model interpretability techniques
+
+## Author
+
+Faraz Ardeh 
+fa.ardeh@gmail.com
+https://www.linkedin.com/in/faraz-ardeh-896917219/
+
+This project was created as part of the 'Introductory Artificial Intelligence' course of the winter semester of SBU.
